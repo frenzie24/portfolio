@@ -1,9 +1,16 @@
 * {
-    background-color: black;
+  
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     text-align: center;
+}
+
+body {
+    background-image:url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -17,7 +24,7 @@ h1 {
     align-items: flex-start;
     width: 80%;
     height: 80%;
-    background-color: darkorchid;
+   
 }
 
 .me img {
