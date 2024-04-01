@@ -3,18 +3,21 @@
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 110%;
+    font-size: 22pt;
     text-decoration: none;
     text-align: center;
 }
 
 body {
-    display: flex;
     background-image: url("../images/bg.jpg");
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+main {
+    display: block;
 }
 
 header {
@@ -31,6 +34,11 @@ h1 {
 }
 h2 {
    font-size:  2em;
+}
+p {
+    text-align: left;
+    text-indent: 1em;
+  
 }
 
 .about {
@@ -65,15 +73,16 @@ h2 {
 }
 
 .me figcaption {
+    font-size: .5em;
 }
 
 .story {
     align-self: flex-start;
-    max-width: 300px;
+    max-width: 400px;
     min-width:200px;
 }
 .story p {
-
+    font-size: .6em;
 }
 .projects {
     
