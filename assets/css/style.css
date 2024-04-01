@@ -12,7 +12,7 @@
 
 body {
     background-image: url("../images/bg.jpg");
-    
+    background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,10 +30,10 @@ h2 {
     display: flex;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 1200px;
     /* the minimum is more likely to be 400px, but this is funny */
     min-width: 420px;
 }
@@ -45,12 +45,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 350px;
+    max-width: 300px;
     margin-top: 0;
 }
 
 .me img {
-    max-width: 350px;
+    max-width: 280px;
     border: 10px solid rgba(0, 0, 0, .5);;
     border-radius: 50%;
   
@@ -65,5 +65,12 @@ h2 {
     min-width:200px;
 }
 .story p {
+
+}
+
+.pod {  
+    height: 500px;
+    width: 100%;
+    background-color: aliceblue;
 
 }
