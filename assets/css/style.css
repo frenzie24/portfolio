@@ -28,7 +28,9 @@ h1 {
     flex-wrap: wrap;
     max-width: 1000px;
 }
-
+.about h2 {
+    width: 100%;
+}
 .me {
     margin: auto;
     justify-content: space-around;
@@ -37,8 +39,8 @@ h1 {
 }
 
 .me img {
-    width: 200px;
-    height: 200px;
+    max-width: 350px;
+    min-width: 300px;
     border-radius: 50%;
 }
 
@@ -47,7 +49,8 @@ h1 {
 }
 
 .story {
-    width: 500px;
+    max-width: 350px;
+    min-width: 300px;
 }
 .story p {
 
