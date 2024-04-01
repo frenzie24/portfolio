@@ -9,11 +9,21 @@
 }
 
 body {
+    display: flex;
     background-image: url("../images/bg.jpg");
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    align-self: flex-end;
 }
 
 h1 {
