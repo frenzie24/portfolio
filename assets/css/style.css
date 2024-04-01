@@ -57,6 +57,8 @@ h1 {
 }
 
 .story {
+    margin-top: 20px;
+    align-self: flex-start;
     max-width: 350px;
     min-width: 300px;
 }
