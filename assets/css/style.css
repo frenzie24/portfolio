@@ -3,7 +3,7 @@
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 105%;
+    font-size: 110%;
     text-decoration: none;
     text-align: center;
 }
@@ -17,10 +17,10 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 3em;
 }
 h2 {
-   font-size:  200%;
+   font-size:  2em;
 }
 
 .about {
@@ -35,7 +35,7 @@ h2 {
     /* the minimum is more likely to be 400px, but this is funny */
     min-width: 420px;
 }
-.about h1 {
+.about h2 {
     width: 100%;
     margin-bottom: 0;
 }
