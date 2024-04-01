@@ -7,6 +7,8 @@
     text-align: center;
 }
 
+
+
 body {
     background-image: url("../images/bg.jpg");
     
@@ -24,7 +26,9 @@ h1 {
     display: flex;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
+   
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
 }
@@ -32,8 +36,8 @@ h1 {
     width: 100%;
 }
 .me {
-    margin: auto;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
 
 }
@@ -41,11 +45,15 @@ h1 {
 .me img {
     max-width: 350px;
     min-width: 300px;
+    border: 10px solid rgba(0, 0, 0, .5);;
     border-radius: 50%;
+  
 }
 
 .me figcaption {
     font-size: small;
+    margin: auto;
+    width: 80%;
 }
 
 .story {
