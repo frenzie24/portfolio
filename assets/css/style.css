@@ -34,6 +34,8 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
+    /* the minimum is more likely to be 400px, but this is funny */
+    min-width: 420px;
 }
 .about h1 {
     width: 100%;
@@ -44,13 +46,11 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     max-width: 350px;
-    min-width: 250px;
     margin-top: 0;
 }
 
 .me img {
     max-width: 350px;
-    min-width: 300px;
     border: 10px solid rgba(0, 0, 0, .5);;
     border-radius: 50%;
   
