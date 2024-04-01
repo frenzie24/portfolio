@@ -19,8 +19,10 @@ body {
 }
 
 h1 {
-    font-size: 200%;
-    font-weight: bolder;
+    font-size: 300%;
+}
+h2 {
+   font-size:  200%;
 }
 
 .about {
@@ -43,7 +45,7 @@ h1 {
     align-items: flex-start;
     max-width: 350px;
     min-width: 250px;
-
+    margin-top: 0;
 }
 
 .me img {
