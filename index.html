@@ -16,39 +16,56 @@
             animation ends when name is in position on left side of header and nav is in position on
             right side of header
         -->
-        <h1>Charles Gross</h1>
-        <nav><a href="#about"></a>About<a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-    </header>
 
-    <secton class="about"> 
-        <h2>About Me</h2>
-        <article class="profile">
-           
-            <figure class="me">
-                <img src="./assets/images/me.jpg" />
-                <figcaption>Welcome to my portfolio!<br>
-                    I'm glad you stopped by while we're under active construction.<br>
-                    Please visit again to see progress!</figcaption>
-            </figure>
-        </article>
+        <nav>
+            <a href="#about_">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- let's add a sticky home button to top left of screen once we scroll past this element
+    that when selected takes us back to home-->
+    <section class="home" id="home">Welcome to my portfolio!<br>
+        I'm glad you stopped by while we're under active construction.<br>
+        Please visit again to see progress!
+    </section>
+    <article class="about" id="about_">
+        <h1>Charles Gross</h1>
+
+
+        <figure class="me">
+            <h2>Software Engineer</h2>
+            <img src="./assets/images/me.jpg" />
+            <figcaption>
+                This is me supervising a project. "Ah yes. Very good. I see.. I see"
+            </figcaption>
+        </figure>
+
         <!-- do something neat with the spans in h3, one text diff color from default? diff fonts? diif weights?-->
-        <article class="story">
-            <h3><span id="swe">Software Engineering </span><br><span id="cook">WITH A COOKS FIREY PASSION<span></span></h3>
+        <section class="story">
+            <h2>About Me</h2>
+
+
 
             <p>I started my computer science journey at Southern Polytechnic State University in 2010.
-                During my time at SPSU, I helped found the Game Design and Development Club, became a Lab Tech and
+                I co-founded the Game Design and Development Club, became a Lab Tech and
                 Teaching Assistant,
-                and discovered a deep love of all things programming.</p>
-                <p>
+                and discovered a deep love of all things programming during my time at SPSU.</p>
+            <p>
                 My life's journey lead me into the kitchen for years but my heart, mind, and soul have always been with
-                CSE, SWE, and Web Development!  I hope we can work together someday.</p>
-        </article>
-    </secton>
+                CSE, SWE, and Web Development! I hope we can work together someday.</p>
+            <p>I also like short walks on the beach.</p>
+        </section>
+    </article>
     <!-- the assignment wants live hosted projects -->
     <section class="projects">
         <h2>Projects</h2>
-        <figure>
+        <!-- pod stands for project of the day-->
+        <figure class="pod">
 
+        </figure>
+        <figure class="project">
+            
         </figure>
 
     </section>
