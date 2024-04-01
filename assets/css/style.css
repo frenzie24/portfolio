@@ -8,8 +8,6 @@
     text-align: center;
 }
 
-
-
 body {
     background-image: url("../images/bg.jpg");
     background-color: #000;
@@ -67,10 +65,13 @@ h2 {
 .story p {
 
 }
-
-.pod {  
-    height: 500px;
+.projects {
+    
     width: 100%;
     background-color: aliceblue;
-
+}
+.pod {  
+    
+    height: 500px;
+    width: 100%;
 }
