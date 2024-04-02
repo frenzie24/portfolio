@@ -3,12 +3,10 @@
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 105%;
+    font-size: 22pt;
     text-decoration: none;
     text-align: center;
 }
-
-
 
 body {
     background-image: url("../images/bg.jpg");
@@ -18,59 +16,173 @@ body {
     background-size: cover;
 }
 
-h1 {
-    font-size: 300%;
+main {
+    display: block;
+    
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    align-self: flex-end;
+}
+
+h1 {
+    font-size: 3em;
+}
+
 h2 {
-   font-size:  200%;
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+h3 {
+    width: 100%;
+    font-size: 1.25em;
+    margin-bottom: .25em;
+}
+p {
+    text-align: left;
+    text-indent: 1em;
+    font-size: .6em;
+}
+
+figure {
+    margin: 1em 0 0 0;
 }
 
 .about {
 
     display: flex;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 1200px;
     /* the minimum is more likely to be 400px, but this is funny */
-    min-width: 420px;
+
 }
-.about h1 {
-    width: 100%;
-    margin-bottom: 0;
+
+.about > article {
+  
+  
+    min-height: 379px;
 }
-.me {
+.profile {
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
-    max-width: 300px;
     margin-top: 0;
 }
 
-.me img {
-    max-width: 280px;
-    border: 10px solid rgba(0, 0, 0, .5);;
+.profile img {
+    /* 
+    because we have a border around our images, we need to set the max-width
+    to 400 - ( border-width * 2 ) 
+    */
+    min-width: 280px;
+    max-width:380px;
+    margin: 0;
+    border: 10px solid rgba(100, 100, 100, .25);
     border-radius: 50%;
-  
+
 }
 
-.me figcaption {
+.profile figcaption {
+    font-size: .5em;
 }
 
 .story {
-    align-self: flex-start;
-    max-width: 300px;
-    min-width:200px;
-}
-.story p {
-
+    margin: auto;
+    max-width: 400px;
+    min-width: 400px;
 }
 
-.pod {  
-    height: 500px;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    background-color: aliceblue;
+}
 
+.pod {
+    width: 100%;
+}
+
+.pod > a > img {
+    max-width: 90%;
+}
+
+.pod > a > img:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+   opacity: .9;
+    border: 2px solid #ffffff; 
+}
+
+.contact {
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+    h3 {
+        font-size: 175%;
+    }
+    
+    .about > article {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        margin: auto;
+        
+    }
+    .profile {
+       max-width: 50%;
+    }
+
+    .profile img {
+        max-width:40%;
+        
+    }
+
+    .profile figcaption, .story {
+        min-width: 40%;
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (max-width: 772px) {
+    h3 {
+        font-size: 175%;
+    }
+    
+    .about > article {
+        display: block;
+      
+      
+        
+    }
+    .profile {
+       max-width: 100%;
+    }
+
+    .profile img {
+        min-width:80%;
+        
+    }
+
+
+    .profile figcaption, .story {
+        min-width: 90%;
+        margin-top: 0;
+        font-size: .9em
+    }
+    
 }
