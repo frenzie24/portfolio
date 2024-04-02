@@ -70,7 +70,7 @@ figure {
 
 .about > article {
   
-    max-width: 400px;
+  
     min-height: 379px;
 }
 .profile {
@@ -105,15 +105,29 @@ figure {
 }
 
 .projects {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    background-color: aliceblue;
 }
 
 .pod {
-
-    height: 500px;
     width: 100%;
+}
+
+.pod > a > img {
+    max-width: 90%;
+}
+
+.pod > a > img:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+   opacity: .9;
+    border: 2px solid #ffffff; 
+}
+
+.contact {
+    align-self: flex-end;
 }
 
 @media only screen and (max-width: 992px) {
@@ -123,17 +137,17 @@ figure {
     
     .about > article {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         min-width: 100%;
         margin: auto;
         
     }
     .profile {
-       
+       max-width: 50%;
     }
 
     .profile img {
-        width:40%;
+        max-width:40%;
         
     }
 
@@ -156,11 +170,11 @@ figure {
         
     }
     .profile {
-       
+       max-width: 100%;
     }
 
     .profile img {
-        min-width:50%;
+        min-width:80%;
         
     }
 
