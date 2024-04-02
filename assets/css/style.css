@@ -42,6 +42,7 @@ h2 {
 }
 
 h3 {
+    width: 100%;
     font-size: 1.25em;
     margin-bottom: .25em;
 }
@@ -64,15 +65,17 @@ figure {
     flex-wrap: wrap;
     max-width: 1200px;
     /* the minimum is more likely to be 400px, but this is funny */
-    min-width: 420px;
+
 }
 
 .about > article {
+  
     max-width: 400px;
     min-height: 379px;
 }
 .profile {
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
     margin-top: 0;
@@ -119,23 +122,53 @@ figure {
     }
     
     .about > article {
-        min-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
         margin: auto;
+        
+    }
+    .profile {
+       
     }
 
     .profile img {
-        min-width:100%;
+        width:40%;
+        
     }
 
-    .profile figcaption {
-        font-size: 1em;
+    .profile figcaption, .story {
+        min-width: 40%;
+        margin-top: 0;
     }
 
-    .story {
-        min-width: 80%;
+}
+
+@media only screen and (max-width: 772px) {
+    h3 {
+        font-size: 175%;
     }
-    p {
-        font-size: 1em;
+    
+    .about > article {
+        display: block;
+      
+      
+        
+    }
+    .profile {
+       
     }
 
+    .profile img {
+        min-width:50%;
+        
+    }
+
+
+    .profile figcaption, .story {
+        min-width: 90%;
+        margin-top: 0;
+        font-size: .9em
+    }
+    
 }
