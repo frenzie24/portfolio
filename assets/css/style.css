@@ -37,35 +37,7 @@ body {
     background-attachment: fixed;
 }
 
-main {
-    display: block;
-
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-header {
-
-    width: 100%;
-    position: sticky;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 0 10px 0 10px;
-}
-
-nav>a {
-    padding: 10px 10px 0 10px;
-}
-
-footer {
-    width: 100%;
-    align-self: flex-end;
-}
-
+/* styling for headings */
 h1 {
     font-size: 3em;
 }
@@ -82,25 +54,48 @@ h3 {
     margin-bottom: .25em;
 }
 
-p {
-    text-align: left;
-    text-indent: 1em;
-    font-size: .6em;
+header {
+
+    width: 100%;
+    position: sticky;
 }
 
-.home {
-    display: none;
-    animation: fadeOut 5s;
-    -webkit-animation: fadeOut 5s;
-    -moz-animation: fadeOut 5s;
-    -o-animation: fadeOut 5s;
-    -ms-animation: fadeOut 5s;
+main {
+    display: block;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 figure {
     margin: 1em 0 0 0;
 }
 
+footer {
+    width: 100%;
+    align-self: flex-end;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 10px 0 10px;
+}
+
+nav>a {
+    padding: 10px 10px 0 10px;
+}
+
+
+
+p {
+    text-align: left;
+    text-indent: 1em;
+    font-size: .6em;
+}
+
+/* styliing for about article */
 .about {
 
     display: flex;
@@ -114,8 +109,6 @@ figure {
 }
 
 .about>article {
-
-
     min-height: 379px;
 }
 
@@ -124,7 +117,38 @@ figure {
     min-width: 100%;
     max-height: 100;
 }
+/* not being used right now */
+.home {
+    display: none;
+    animation: fadeOut 5s;
+    -webkit-animation: fadeOut 5s;
+    -moz-animation: fadeOut 5s;
+    -o-animation: fadeOut 5s;
+    -ms-animation: fadeOut 5s;
+}
+/* story styling */
+.story {
+    margin: auto;
+    max-width: 400px;
+    min-width: 400px;
+}
+/* styling for showcased project */
+.pod {
+    min-width: 100%;
+}
 
+.pod>a>img {
+    max-width: 95%;
+}
+
+.pod>a>img:hover {
+    transform: scale(1.05);
+    /* Scale up by 5% on hover */
+    opacity: .9;
+    border: 2px solid #ffffff;
+}
+
+/* styling for profile */
 .profile {
     flex-wrap: wrap;
     width: 100%;
@@ -150,35 +174,7 @@ figure {
     font-size: .5em;
 }
 
-.story {
-    margin: auto;
-    max-width: 400px;
-    min-width: 400px;
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.pod {
-    min-width: 100%;
-}
-
-.pod>a>img {
-    max-width: 95%;
-}
-
-.pod>a>img:hover {
-    transform: scale(1.05);
-    /* Scale up by 5% on hover */
-    opacity: .9;
-    border: 2px solid #ffffff;
-}
-
+/* styling for older projects */
 .project {
     width: 50%;
     min-width: 380px;
@@ -187,7 +183,7 @@ figure {
 .project>a>img {
     max-width: 90%;
     min-width: 380px;
-   
+
 }
 
 .project>a>img:hover {
@@ -200,15 +196,20 @@ figure {
 .project>figcaption {
     font-size: 60%;
 }
+/* styling for projects container */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
 
+/* styling for contant section */
 .contact {
     margin-top: 100px;
 
     align-self: flex-end;
-}
-
-#contact-message {
-    min-width: 100%;
 }
 
 .contact>section {
@@ -226,6 +227,9 @@ figure {
 }
 
 
+#contact-message {
+    min-width: 100%;
+}
 
 @media only screen and (max-width: 992px) {
     h3 {
@@ -258,10 +262,7 @@ figure {
 }
 
 @media only screen and (max-width: 772px) {
-    h3 {
-        font-size: 175%;
-    }
-
+   
     .about>article {
         display: block;
     }
@@ -273,6 +274,7 @@ figure {
     .profile img {
         min-width: 80%;
     }
+
     .profile figcaption,
     .story {
         min-width: 90%;
