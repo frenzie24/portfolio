@@ -165,14 +165,31 @@ figure {
 }
 
 .pod {
-    width: 100%;
+    min-width: 100%;
 }
 
 .pod>a>img {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .pod>a>img:hover {
+    transform: scale(1.05);
+    /* Scale up by 5% on hover */
+    opacity: .9;
+    border: 2px solid #ffffff;
+}
+
+.project {
+    width: 50%;
+    min-width: 380px;
+}
+
+.project>a>img {
+    max-width: 90%;
+   
+}
+
+.project>a>img:hover {
     transform: scale(1.05);
     /* Scale up by 5% on hover */
     opacity: .9;
