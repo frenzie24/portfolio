@@ -32,13 +32,15 @@ footer {
 h1 {
     font-size: 3em;
 }
+
 h2 {
-   font-size:  2em;
+    font-size: 2em;
 }
+
 p {
     text-align: left;
     text-indent: 1em;
-  
+
 }
 
 .about {
@@ -53,11 +55,13 @@ p {
     /* the minimum is more likely to be 400px, but this is funny */
     min-width: 420px;
 }
+
 .about h2 {
     width: 100%;
     margin-bottom: 0;
 }
-.me {
+
+.profile {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
@@ -65,32 +69,36 @@ p {
     margin-top: 0;
 }
 
-.me img {
+.profile img {
     max-width: 280px;
-    border: 10px solid rgba(0, 0, 0, .5);;
+    border: 10px solid rgba(0, 0, 0, .5);
+    ;
     border-radius: 50%;
-  
+
 }
 
-.me figcaption {
+.profile figcaption {
     font-size: .5em;
 }
 
 .story {
     align-self: flex-start;
     max-width: 400px;
-    min-width:200px;
+    min-width: 200px;
 }
+
 .story p {
     font-size: .6em;
 }
+
 .projects {
-    
+
     width: 100%;
     background-color: aliceblue;
 }
-.pod {  
-    
+
+.pod {
+
     height: 500px;
     width: 100%;
 }
