@@ -186,6 +186,7 @@ figure {
 
 .project>a>img {
     max-width: 90%;
+    min-width: 380px;
    
 }
 
@@ -194,6 +195,10 @@ figure {
     /* Scale up by 5% on hover */
     opacity: .9;
     border: 2px solid #ffffff;
+}
+
+.project>figcaption {
+    font-size: 60%;
 }
 
 .contact {
