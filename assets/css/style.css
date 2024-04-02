@@ -1,3 +1,4 @@
+
 * {
 
     color: white;
@@ -8,22 +9,56 @@
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+    
 body {
-    background-image: url("../images/bg.jpg");
     background-color: #000;
+    background-image: url("../images/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 main {
     display: block;
-    
+
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 header {
+   
     width: 100%;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 10px 0 10px;
+}
+
+nav > a {
+    padding: 10px 10px 0 10px;
 }
 
 footer {
@@ -46,10 +81,19 @@ h3 {
     font-size: 1.25em;
     margin-bottom: .25em;
 }
+
 p {
     text-align: left;
     text-indent: 1em;
     font-size: .6em;
+}
+.home {
+    display: none;
+    animation: fadeOut 5s;
+  -webkit-animation: fadeOut 5s;
+  -moz-animation: fadeOut 5s;
+  -o-animation: fadeOut 5s;
+  -ms-animation: fadeOut 5s;
 }
 
 figure {
@@ -68,11 +112,18 @@ figure {
 
 }
 
-.about > article {
-  
-  
+.about>article {
+
+
     min-height: 379px;
 }
+
+.bg {
+    position: sticky;
+    min-width: 100%;
+    max-height: 100;
+}
+
 .profile {
     flex-wrap: wrap;
     width: 100%;
@@ -87,7 +138,7 @@ figure {
     to 400 - ( border-width * 2 ) 
     */
     min-width: 280px;
-    max-width:380px;
+    max-width: 380px;
     margin: 0;
     border: 10px solid rgba(100, 100, 100, .25);
     border-radius: 50%;
@@ -116,19 +167,20 @@ figure {
     width: 100%;
 }
 
-.pod > a > img {
+.pod>a>img {
     max-width: 90%;
 }
 
-.pod > a > img:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
-   opacity: .9;
-    border: 2px solid #ffffff; 
+.pod>a>img:hover {
+    transform: scale(1.05);
+    /* Scale up by 5% on hover */
+    opacity: .9;
+    border: 2px solid #ffffff;
 }
 
 .contact {
     margin-top: 100px;
-    
+
     align-self: flex-end;
 }
 
@@ -136,8 +188,8 @@ figure {
     min-width: 100%;
 }
 
-.contact > section {
-    display:flex;
+.contact>section {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -146,32 +198,36 @@ figure {
     min-width: 100%;
 }
 
-.contact >section > button {
-    max-width: 15em;
+.contact>section>a>img {
+    max-width: 10em;
 }
+
+
 
 @media only screen and (max-width: 992px) {
     h3 {
         font-size: 175%;
     }
-    
-    .about > article {
+
+    .about>article {
         display: flex;
         justify-content: center;
         min-width: 100%;
         margin: auto;
-        
+
     }
+
     .profile {
-       max-width: 50%;
+        max-width: 50%;
     }
 
     .profile img {
-        max-width:40%;
-        
+        max-width: 40%;
+
     }
 
-    .profile figcaption, .story {
+    .profile figcaption,
+    .story {
         min-width: 40%;
         margin-top: 0;
     }
@@ -182,27 +238,29 @@ figure {
     h3 {
         font-size: 175%;
     }
-    
-    .about > article {
+
+    .about>article {
         display: block;
-      
-      
-        
+
+
+
     }
+
     .profile {
-       max-width: 100%;
+        max-width: 100%;
     }
 
     .profile img {
-        min-width:80%;
-        
+        min-width: 80%;
+
     }
 
 
-    .profile figcaption, .story {
+    .profile figcaption,
+    .story {
         min-width: 90%;
         margin-top: 0;
         font-size: .9em
     }
-    
+
 }
