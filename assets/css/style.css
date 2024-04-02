@@ -18,6 +18,8 @@ body {
 
 main {
     display: block;
+    
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -35,19 +37,28 @@ h1 {
 
 h2 {
     font-size: 2em;
+    width: 100%;
+    margin-bottom: 0;
 }
 
+h3 {
+    font-size: 1.25em;
+    margin-bottom: .25em;
+}
 p {
     text-align: left;
     text-indent: 1em;
+    font-size: .6em;
+}
 
+figure {
+    margin: 1em 0 0 0;
 }
 
 .about {
 
     display: flex;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -56,23 +67,26 @@ p {
     min-width: 420px;
 }
 
-.about h2 {
-    width: 100%;
-    margin-bottom: 0;
+.about > article {
+    max-width: 400px;
+    min-height: 379px;
 }
-
 .profile {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 300px;
     margin-top: 0;
 }
 
 .profile img {
-    max-width: 280px;
-    border: 10px solid rgba(0, 0, 0, .5);
-    ;
+    /* 
+    because we have a border around our images, we need to set the max-width
+    to 400 - ( border-width * 2 ) 
+    */
+    min-width: 280px;
+    max-width:380px;
+    margin: 0;
+    border: 10px solid rgba(100, 100, 100, .25);
     border-radius: 50%;
 
 }
@@ -82,13 +96,9 @@ p {
 }
 
 .story {
-    align-self: flex-start;
+    margin: auto;
     max-width: 400px;
-    min-width: 200px;
-}
-
-.story p {
-    font-size: .6em;
+    min-width: 400px;
 }
 
 .projects {
@@ -101,4 +111,31 @@ p {
 
     height: 500px;
     width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    h3 {
+        font-size: 175%;
+    }
+    
+    .about > article {
+        min-width: 80%;
+        margin: auto;
+    }
+
+    .profile img {
+        min-width:100%;
+    }
+
+    .profile figcaption {
+        font-size: 1em;
+    }
+
+    .story {
+        min-width: 80%;
+    }
+    p {
+        font-size: 1em;
+    }
+
 }
